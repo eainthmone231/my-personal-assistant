@@ -11,6 +11,17 @@ if not api_key:
     st.stop()
 openai.api_key = api_key
 #openai.api_key = os.getenv("OPENAI_API_KEY")
+
+# Verify the API key
+try:
+    openai.Model.list()
+except openai.error.AuthenticationError:
+    st.error("The API key is invalid. Please enter a valid OpenAI API key.")
+    st.stop()
+except Exception as e:
+    st.error(f"An error occurred: {e}")
+    st.stop()
+    
 st.title("Chat with Eaint Lay Hmone's Career Assistant")
 st.markdown(
     """
