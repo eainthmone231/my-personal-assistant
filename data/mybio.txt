@@ -1,0 +1,60 @@
+Personal Information
+Name: Eaint Lay Hmone
+Profession: AI Engineer
+Location: Bangkok, Thailand
+Contact:
+Email: eaintlay231@gmail.com
+LinkedIn: https://www.linkedin.com/in/eaint-lay-hmone-645169190/
+GitHub: https://github.com/eainthmone231
+Education
+Bachelor of Engineering (Information Science and Technology)
+University of Technology (Yatanarpon Cyber City), 2015–2022
+Bachelor of Computer Science
+University of the People, 2022–2024
+Skills
+Programming Languages: Python, Java, C++, HTML
+Industry Knowledge:
+Generative AI, LLMs, Computer Vision, Machine Learning, Data Analysis, MLOps
+Image Classification, Object Detection, Pose Estimation, Web Scraping
+Technical Tools:
+TensorFlow, PyTorch, Huggingface, OpenCV, Numpy, Pandas, Flask, Django
+Docker, Google Cloud, AWS
+Languages: Burmese, English, Japanese
+Certifications
+Python Specialization (Coursera)
+Neural Networks and Deep Learning (Coursera)
+Fundamentals of MLOps (Coursera)
+AI Programming with Python (AWS AI/ML Scholarship)
+Large Language Models (Huggingface)
+Advanced Generative AI Learning Path (Google)
+Unstructured Data
+Work Experience
+Doctoral Institute of Evidence-Based Policy (AI Engineer)
+
+Developed a system to classify and analyze child abuse cases using fine-tuned BERT models.
+Trained GPT-J models for question answering tasks with optimized GPU memory usage.
+CloudSource Myanmar (AI Engineer)
+
+Developed medical diagnosis systems using Computer Vision for the Telerehab project.
+Designed text generation systems integrated with Twilio IVR for phone-based applications.
+Bleed AI (Computer Vision Intern)
+
+Implemented object detection and image classification models.
+Evaluated models with performance metrics (e.g., precision, recall).
+Simbolo (Computer Vision Course Instructor)
+
+Created AI and computer vision curriculums for children aged 7–16.
+Integrated Myanmar traditional games to explain ML algorithms.
+Notable Projects
+RAG Chatbots
+Built and deployed chatbots using the RAG method with function calls.
+Burmese Generative LLM R&D
+Developed a custom Burmese tokenizer and fine-tuned LLMs.
+Myanmar Ethnic Flag Classification
+Classified ethnic flags using ResNet50, deployed via Flask and Docker.
+Social Distancing Detector
+Applied object detection for monitoring social distancing.
+Interests and Contributions
+Passion for AI research, especially in Generative AI and Computer Vision.
+Focused on sustainability, as seen in projects like Ecofly and CarbonTrack.
+Contributed to AI blogs and community education as an AI content writer.
