@@ -2,6 +2,7 @@ import streamlit as st
 import openai
 from llama_index.llms.openai import OpenAI
 from llama_index.core import VectorStoreIndex, SimpleDirectoryReader, Settings
+from openai import OpenAIError
 
 st.set_page_config(page_title="Chat with the Hmone's personal assistant",  layout="centered", initial_sidebar_state="auto", menu_items=None)
 # Prompt the user to enter their OpenAI API key
@@ -9,19 +10,19 @@ api_key = st.text_input("Enter your OpenAI API key:", type="password")
 if not api_key:
     st.warning("Please enter your OpenAI API key to proceed.")
     st.stop()
-openai.api_key = api_key
 #openai.api_key = os.getenv("OPENAI_API_KEY")
 
-# Verify the API key
 try:
+    # Set API key
+    openai.api_key = api_key
+
+    # Test the API by making a dummy call (list models)
     openai.Model.list()
-except openai.error.AuthenticationError:
-    st.error("The API key is invalid. Please enter a valid OpenAI API key.")
-    st.stop()
-except Exception as e:
-    st.error(f"An error occurred: {e}")
-    st.stop()
-    
+except OpenAIError as e:
+   st.error("The API key is invalid. Please enter a valid OpenAI API key.")
+st.stop()
+   
+
 st.title("Chat with Eaint Lay Hmone's Career Assistant")
 st.markdown(
     """
