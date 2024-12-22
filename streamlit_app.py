@@ -5,6 +5,15 @@ from llama_index.core import VectorStoreIndex, SimpleDirectoryReader, Settings
 from openai import OpenAIError
 
 st.set_page_config(page_title="Chat with the Hmone's personal assistant",  layout="centered", initial_sidebar_state="auto", menu_items=None)
+
+st.title("Chat with Eaint Lay Hmone's Career Assistant")
+st.markdown(
+    """
+    Welcome to my personal career assistant!  
+    Here, you can ask questions about my career journey, educational background, key projects, and professional skills.  
+    Whether you're a recruiter, collaborator, or just curious, feel free to ask me anything!
+    """
+)
 # Prompt the user to enter their OpenAI API key
 api_key = st.text_input("Enter your OpenAI API key:", type="password")
 if not api_key:
@@ -23,14 +32,7 @@ except OpenAIError as e:
 st.stop()
    
 
-st.title("Chat with Eaint Lay Hmone's Career Assistant")
-st.markdown(
-    """
-    Welcome to my personal career assistant!  
-    Here, you can ask questions about my career journey, educational background, key projects, and professional skills.  
-    Whether you're a recruiter, collaborator, or just curious, feel free to ask me anything!
-    """
-)
+
 if "messages" not in st.session_state.keys():  # Initialize the chat messages history
     st.session_state.messages = [
         {
