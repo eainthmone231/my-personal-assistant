@@ -3,8 +3,13 @@ import openai
 from llama_index.llms.openai import OpenAI
 from llama_index.core import VectorStoreIndex, SimpleDirectoryReader, Settings
 
-st.set_page_config(page_title="Chat with the Streamlit docs, powered by LlamaIndex", page_icon="🦙", layout="centered", initial_sidebar_state="auto", menu_items=None)
-openai.api_key = st.secrets.openai_key
+st.set_page_config(page_title="Chat with the Hmone's personal assistant",  layout="centered", initial_sidebar_state="auto", menu_items=None)
+# Prompt the user to enter their OpenAI API key
+api_key = st.text_input("Enter your OpenAI API key:", type="password")
+if not api_key:
+    st.warning("Please enter your OpenAI API key to proceed.")
+    st.stop()
+openai.api_key = api_key
 #openai.api_key = os.getenv("OPENAI_API_KEY")
 st.title("Chat with Eaint Lay Hmone personal assistant")
 st.markdown(
