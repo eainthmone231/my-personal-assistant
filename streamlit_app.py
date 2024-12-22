@@ -11,9 +11,13 @@ if not api_key:
     st.stop()
 openai.api_key = api_key
 #openai.api_key = os.getenv("OPENAI_API_KEY")
-st.title("Chat with Eaint Lay Hmone personal assistant")
+st.title("Chat with Eaint Lay Hmone's Career Assistant")
 st.markdown(
-    "This is a simple chat interface that uses the LlamaIndex library to answer questions about Eaint Lay Hmone. Ask me anything!"
+    """
+    Welcome to my personal career assistant!  
+    Here, you can ask questions about my career journey, educational background, key projects, and professional skills.  
+    Whether you're a recruiter, collaborator, or just curious, feel free to ask me anything!
+    """
 )
 if "messages" not in st.session_state.keys():  # Initialize the chat messages history
     st.session_state.messages = [
